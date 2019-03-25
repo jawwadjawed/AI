@@ -1,0 +1,26 @@
+cardNumber = input("Enter your card number")
+pin = input("Enter your PIN")
+
+if cardNumber == pin:
+    print("Welcome to Dhoraji Bank Limitted!!!")
+    facility = str(input("Press b for balance inquery \nd for cash deposit \nw for withdrawal\n").upper())
+    currentBalance = 5000
+    
+    if facility == "B":
+        print("Your current balance is " + str(currentBalance))
+    elif facility == "D":
+        deposit = int(input("Enter amount : ")
+        currentBalance += deposit
+        print("Your new balance is " + str(currentBalance))
+#     elif facility == "W":
+#         withdrawal = int(input("Enter amount : ")
+#         if (withdrawal > currentBalance):
+#             print("Sorry! Insufficient Balance!!!")
+#         else:
+#             currentBalance -= withdrawal
+#             print("Your new balance is " + str(currentBalance))
+    else:
+        print("Invalid entry!")
+    print("Thanks for using Dhoraji Bank Limitted!!!")
+else:
+    print("Wrong PIN")
